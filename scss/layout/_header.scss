@@ -61,6 +61,11 @@ header {
     }
 
     .navbar {
+        i.fa-solid.fa-bars{
+            @include DeviceMaximum992{
+                color: $colorWhite;
+            }
+        }
         .navbar-toggler {
             &:focus {
                 border: none !important;

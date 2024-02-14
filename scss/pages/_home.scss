@@ -82,6 +82,22 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    .col-lg-3{
+        @include DeviceMaximum768{
+            &:not(:last-child){
+            .card{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+     @include DeviceMaximum992{
+            &:not(:nth-last-child(-n+2)){
+            .card{
+                margin-bottom: 3rem;
+            }
+        }
+        }
+}
     .card {
         position: relative;
         transition: $transition04s;
