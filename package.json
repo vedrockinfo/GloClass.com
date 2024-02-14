@@ -1,0 +1,14 @@
+{
+  "name": "gloclass",
+  "version": "1.0.0",
+  "description": "Landing Page for GloClass.com",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "Vedant",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
