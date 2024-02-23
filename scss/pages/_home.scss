@@ -104,7 +104,7 @@
         background: rgba(#fff, $alpha: 0.5);
         &::before{
             content: "";
-            background: $colorTertiary;
+            background: $colorPrimary;
             height: 3px;
             width: 0;
             position: absolute;
@@ -114,20 +114,33 @@
         }
 
         &:hover{
-            background: rgba(#e7e7e7, $alpha: 0.5);
-            border-color: rgba(#e7e7e7, $alpha: 0.5)!important;
+            background: rgba($colorPrimary, $alpha: 1);
+            border-color: rgba($colorPrimary, $alpha: 1)!important;
             transform: translateY(-5px);
             box-shadow: $boxShadowOne;
+            img{
+                filter: brightness(3) sepia(9) grayscale(1);
+            }
+            .card-content, .headingFour{
+                color: $colorWhite;
+            }
+            .link-two a{
+                background: $colorWhite;
+                color: rgba($colorPrimary, $alpha: 1);
+                border-color: $colorWhite;
+            }
             &::before{
                 width: 100%;
             }
         }
         .card-img {
             overflow: hidden;
+            text-align: center;
+            padding: 2rem;
 
             img {
-                width: 100%;
-                height: 20rem;
+                width: 7rem;
+                height: auto;
                 object-fit: cover;
                 object-position: top;
                 transition: $transition04s;
@@ -242,3 +255,297 @@
         }
     }
 }
+.lead-place{
+    background-image: url(../img/better-bg.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+    h2{
+        color: rgba($colorPrimary, $alpha: 1);
+    }
+}
+.team-up{
+    figure{
+        width: 20rem;
+        @include DeviceMinimum992{
+            float: right;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        }
+        @include DeviceMaximum576{
+            width: calc(100% - 2rem);
+        }
+        .sunita-pic{
+            width: 100%;
+            height: auto;
+        }
+        strong, span{
+            display: block;
+            text-align: center;
+            font-size: 14px;
+        }
+        strong{
+            color: rgba($colorPrimary, $alpha: 1);
+            margin-top: 2rem;
+        }
+        span{
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}
+    .isaptive{
+        background: #f6f6f6;
+        .headingFour{
+        margin-bottom: 1.5rem;
+        @include DeviceMinimum992{
+            text-align: left!important;
+        }
+    }
+        @include DeviceMinimum992{
+            .container{
+                width: 90rem;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        }
+    }
+    .experiece-team{
+        .img-wrapper, .img-wrapper img {
+    height: 100%;
+}
+.img-wrapper img{
+    object-fit: cover;
+    object-position: bottom;
+}
+        blockquote{
+            background: rgba($colorPrimary, $alpha: 1);
+    padding: 30px 10px 30px 30px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+            ul{
+                li{
+                    color: $colorWhite;
+                    &::before{
+                        background: $colorWhite;
+                        outline-color: $colorWhite;
+                        border-color: rgba($colorPrimary, $alpha: 1);
+                    }
+                }
+            }
+            h4{
+                text-align: left;
+            }
+        }
+    }
+
+    .not-easy-section{
+        .img-wrapper img {
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.img-wrapper {
+    @include DeviceMinimum992{
+        padding-right: 3rem;
+    }
+    img{
+    object-fit: cover;
+    object-position: 100% 58%;
+}
+}
+        h4{
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .curriculum-provides{
+.img-wrapper img{
+    object-fit: cover;
+    object-position: top;
+    height: 50rem;
+    width: 100%;
+}
+        blockquote{
+            background: rgba($colorPrimary, $alpha: 1);
+    padding: 30px 10px 30px 30px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+            ul{
+                li{
+                    color: $colorWhite;
+                    &::before{
+                        background: $colorWhite;
+                        outline-color: $colorWhite;
+                        border-color: rgba($colorPrimary, $alpha: 1);
+                    }
+                }
+            }
+            h4{
+                text-align: left;
+            }
+        }
+    }
+    .standardization{
+.img-wrapper img{
+    object-fit: cover;
+    object-position: top;
+    height: 50rem;
+    width: 100%;
+}
+        blockquote{
+            background: rgba($colorPrimary, $alpha: 1);
+    padding: 30px 10px 30px 30px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+            ul{
+                li{
+                    color: $colorWhite;
+                    &::before{
+                        background: $colorWhite;
+                        outline-color: $colorWhite;
+                        border-color: rgba($colorPrimary, $alpha: 1);
+                    }
+                }
+            }
+            h4{
+                text-align: left;
+            }
+        }
+    }
+    .support-schools{
+        .successgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include DeviceMinimum992{
+        width: 90rem;
+    }
+    margin: auto;
+    @include DeviceMaximum992{
+grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include DeviceMaximum768{
+grid-template-columns: repeat(1, 1fr);
+    }
+    .successgridItem {
+    padding: 3rem 2rem;
+}
+    .branding-card {
+    text-align: center;
+    img{
+        width: 8rem;
+        background: rgba($colorPrimary, $alpha: 1);
+        border-radius: 50%;
+    }
+    h4{
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: rgba($colorPrimary, $alpha: 1);
+        margin-top: 2rem;
+        text-transform: capitalize;
+    }
+}
+}
+    }
+
+    .global-classroom-two{
+        .advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 3rem;
+    @include DeviceMaximum992{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    @include DeviceMaximum768{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include DeviceMaximum576{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .advisor-grid-item {
+    text-align: center;
+    box-shadow: $boxShadowOne;
+    position: relative;
+    transition: $transition04s;
+    &::before{
+        content: "";
+        background: $colorPrimary;
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: $transition04s;
+    }
+    &:hover{
+        transform: translateY(-5px);
+        &::before{
+            width: 100%;
+        }
+    }
+    .adv-content{
+        padding: 30px 6px;
+    }
+    .heading-fourth{
+        font-size: 14px;
+        padding: 0 0 6px 0;
+    }
+    p{
+        margin-bottom: 0;
+        line-height: 1;
+    }
+}
+}
+    }
+    .heyapps{
+        background: rgba($colorPrimary, $alpha: 1);
+        padding: 7rem 0;
+        @include DeviceMaximum768{
+            padding: 4rem 0;
+        }
+        .app-area{
+            text-align: center;
+        @include DeviceMinimum992{
+            width: calc(100% - 10rem);
+            margin: auto;
+        }
+            .link-one{
+                position: relative;
+                display: inline-block;
+                a{
+                    color: rgba($colorPrimary, $alpha: 1);
+                    &:hover{
+                        color: $colorWhite;
+                        & + i{
+                            color: $colorWhite!important;
+                        }
+                    }
+                }
+                i{
+                    position: absolute;
+                    right: 2.5rem;
+                    transition: $transition04s;
+                    color: rgba($colorPrimary, $alpha: 1);
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            .contentPara{
+                color: $colorWhite;
+                margin: 3rem 0;
+            }
+            .app-ss{
+                img{
+                    width: 50rem;
+                    margin: 0 auto 3rem;
+                }
+            }
+        }
+    }

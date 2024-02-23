@@ -22,9 +22,9 @@
 .link-two{
   text-align: center;
    a {
-  background: $colorTertiary;
+  background: $colorPrimary;
   color: $colorWhite;
-  border: 1px solid $colorTertiary;
+  border: 1px solid $colorPrimary;
   border-radius: 30px;
   transition: $transition04s;
   display: inline-block;
@@ -38,8 +38,8 @@
   }
   &:hover {
     background: transparent;
-    color: $colorTertiary;
-    border: 1px solid $colorTertiary;
+    color: $colorPrimary;
+    border: 1px solid $colorPrimary;
   }
 }
 }

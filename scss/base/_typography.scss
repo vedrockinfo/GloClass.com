@@ -48,7 +48,7 @@ span {
   color: $colorheading;
   span{
     font: inherit;
-    color: $colorTertiary;
+    color: $colorPrimary;
   }
 
   @include DeviceMaximum768 {
@@ -71,7 +71,7 @@ span {
 .headingFour {
   font-size: 1.8rem;
   font-weight: 700;
-  color: $colorTertiary;
+  color: $colorPrimary;
   text-align: center;
   letter-spacing: 0.3px;
 

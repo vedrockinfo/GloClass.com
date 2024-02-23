@@ -61,6 +61,27 @@ $('.partners').owlCarousel({
     }
 })
 
+$('.heyexams').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    smartSpeed: 800,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+})
+
 // Replace with your YouTube video ID
 var videoID = "AdtQFb4GkYc?si=Td9P75GgAr-CG08P";
 

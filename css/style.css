@@ -67,7 +67,7 @@ span {
   color: #020300; }
   .headingTwo span {
     font: inherit;
-    color: #FF8600; }
+    color: #0088CC; }
   @media (max-width: 767.9px) {
     .headingTwo {
       font-size: 2.5rem;
@@ -85,7 +85,7 @@ span {
 .headingFour {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #FF8600;
+  color: #0088CC;
   text-align: center;
   letter-spacing: 0.3px; }
   @media (max-width: 767.9px) {
@@ -277,9 +277,9 @@ blockquote.blockquote {
 .link-two {
   text-align: center; }
   .link-two a {
-    background: #FF8600;
+    background: #0088CC;
     color: #fff;
-    border: 1px solid #FF8600;
+    border: 1px solid #0088CC;
     border-radius: 30px;
     transition: 0.5s ease-in-out;
     display: inline-block;
@@ -293,8 +293,8 @@ blockquote.blockquote {
         padding: 11.7px 30px; } }
     .link-two a:hover {
       background: transparent;
-      color: #FF8600;
-      border: 1px solid #FF8600; }
+      color: #0088CC;
+      border: 1px solid #0088CC; }
 
 button.submit-btn {
   background-image: linear-gradient(40deg, #0088CC, #27187E);
@@ -549,7 +549,7 @@ header .navbar.fixed-top {
     background: rgba(255, 255, 255, 0.5); }
     .global-education .card::before {
       content: "";
-      background: #FF8600;
+      background: #0088CC;
       height: 3px;
       width: 0;
       position: absolute;
@@ -557,17 +557,27 @@ header .navbar.fixed-top {
       left: 0;
       transition: 0.5s ease-in-out; }
     .global-education .card:hover {
-      background: rgba(231, 231, 231, 0.5);
-      border-color: rgba(231, 231, 231, 0.5) !important;
+      background: #0088cc;
+      border-color: #0088cc !important;
       transform: translateY(-5px);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+      .global-education .card:hover img {
+        filter: brightness(3) sepia(9) grayscale(1); }
+      .global-education .card:hover .card-content, .global-education .card:hover .headingFour {
+        color: #fff; }
+      .global-education .card:hover .link-two a {
+        background: #fff;
+        color: #0088cc;
+        border-color: #fff; }
       .global-education .card:hover::before {
         width: 100%; }
     .global-education .card .card-img {
-      overflow: hidden; }
+      overflow: hidden;
+      text-align: center;
+      padding: 2rem; }
       .global-education .card .card-img img {
-        width: 100%;
-        height: 20rem;
+        width: 7rem;
+        height: auto;
         object-fit: cover;
         object-position: top;
         transition: 0.5s ease-in-out; }
@@ -649,6 +659,237 @@ header .navbar.fixed-top {
       font-weight: 600; }
     .global-classroom .responsive-content p, .global-classroom .responsive-content a {
       color: #fff; }
+
+.lead-place {
+  background-image: url(../img/better-bg.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  min-height: 70rem;
+  display: flex;
+  align-items: center; }
+  .lead-place h2 {
+    color: #0088cc; }
+
+.team-up figure {
+  width: 20rem; }
+  @media (min-width: 991.91px) {
+    .team-up figure {
+      float: right;
+      padding-left: 2rem;
+      padding-bottom: 2rem; } }
+  @media (max-width: 575.9px) {
+    .team-up figure {
+      width: calc(100% - 2rem); } }
+  .team-up figure .sunita-pic {
+    width: 100%;
+    height: auto; }
+  .team-up figure strong, .team-up figure span {
+    display: block;
+    text-align: center;
+    font-size: 14px; }
+  .team-up figure strong {
+    color: #0088cc;
+    margin-top: 2rem; }
+  .team-up figure span {
+    font-size: 12px;
+    font-weight: 500; }
+
+.isaptive {
+  background: #f6f6f6; }
+  .isaptive .headingFour {
+    margin-bottom: 1.5rem; }
+    @media (min-width: 991.91px) {
+      .isaptive .headingFour {
+        text-align: left !important; } }
+  @media (min-width: 991.91px) {
+    .isaptive .container {
+      width: 90rem;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.experiece-team .img-wrapper, .experiece-team .img-wrapper img {
+  height: 100%; }
+
+.experiece-team .img-wrapper img {
+  object-fit: cover;
+  object-position: bottom; }
+
+.experiece-team blockquote {
+  background: #0088cc;
+  padding: 30px 10px 30px 30px;
+  margin-top: 3rem;
+  margin-bottom: 0; }
+  .experiece-team blockquote ul li {
+    color: #fff; }
+    .experiece-team blockquote ul li::before {
+      background: #fff;
+      outline-color: #fff;
+      border-color: #0088cc; }
+  .experiece-team blockquote h4 {
+    text-align: left; }
+
+.not-easy-section .img-wrapper img {
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center; }
+
+@media (min-width: 991.91px) {
+  .not-easy-section .img-wrapper {
+    padding-right: 3rem; } }
+
+.not-easy-section .img-wrapper img {
+  object-fit: cover;
+  object-position: 100% 58%; }
+
+.not-easy-section h4 {
+  text-align: left;
+  margin-bottom: 1.5rem; }
+
+.curriculum-provides .img-wrapper img {
+  object-fit: cover;
+  object-position: top;
+  height: 50rem;
+  width: 100%; }
+
+.curriculum-provides blockquote {
+  background: #0088cc;
+  padding: 30px 10px 30px 30px;
+  margin-top: 3rem;
+  margin-bottom: 0; }
+  .curriculum-provides blockquote ul li {
+    color: #fff; }
+    .curriculum-provides blockquote ul li::before {
+      background: #fff;
+      outline-color: #fff;
+      border-color: #0088cc; }
+  .curriculum-provides blockquote h4 {
+    text-align: left; }
+
+.standardization .img-wrapper img {
+  object-fit: cover;
+  object-position: top;
+  height: 50rem;
+  width: 100%; }
+
+.standardization blockquote {
+  background: #0088cc;
+  padding: 30px 10px 30px 30px;
+  margin-top: 3rem;
+  margin-bottom: 0; }
+  .standardization blockquote ul li {
+    color: #fff; }
+    .standardization blockquote ul li::before {
+      background: #fff;
+      outline-color: #fff;
+      border-color: #0088cc; }
+  .standardization blockquote h4 {
+    text-align: left; }
+
+.support-schools .successgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto; }
+  @media (min-width: 991.91px) {
+    .support-schools .successgrid {
+      width: 90rem; } }
+  @media (max-width: 991.9px) {
+    .support-schools .successgrid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767.9px) {
+    .support-schools .successgrid {
+      grid-template-columns: repeat(1, 1fr); } }
+  .support-schools .successgrid .successgridItem {
+    padding: 3rem 2rem; }
+  .support-schools .successgrid .branding-card {
+    text-align: center; }
+    .support-schools .successgrid .branding-card img {
+      width: 8rem;
+      background: #0088cc;
+      border-radius: 50%; }
+    .support-schools .successgrid .branding-card h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #0088cc;
+      margin-top: 2rem;
+      text-transform: capitalize; }
+
+.global-classroom-two .advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 3rem; }
+  @media (max-width: 991.9px) {
+    .global-classroom-two .advisors-grid {
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center; } }
+  @media (max-width: 767.9px) {
+    .global-classroom-two .advisors-grid {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 575.9px) {
+    .global-classroom-two .advisors-grid {
+      grid-template-columns: repeat(1, 1fr); } }
+  .global-classroom-two .advisors-grid .advisor-grid-item {
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    transition: 0.5s ease-in-out; }
+    .global-classroom-two .advisors-grid .advisor-grid-item::before {
+      content: "";
+      background: #0088CC;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: 0.5s ease-in-out; }
+    .global-classroom-two .advisors-grid .advisor-grid-item:hover {
+      transform: translateY(-5px); }
+      .global-classroom-two .advisors-grid .advisor-grid-item:hover::before {
+        width: 100%; }
+    .global-classroom-two .advisors-grid .advisor-grid-item .adv-content {
+      padding: 30px 6px; }
+    .global-classroom-two .advisors-grid .advisor-grid-item .heading-fourth {
+      font-size: 14px;
+      padding: 0 0 6px 0; }
+    .global-classroom-two .advisors-grid .advisor-grid-item p {
+      margin-bottom: 0;
+      line-height: 1; }
+
+.heyapps {
+  background: #0088cc;
+  padding: 7rem 0; }
+  @media (max-width: 767.9px) {
+    .heyapps {
+      padding: 4rem 0; } }
+  .heyapps .app-area {
+    text-align: center; }
+    @media (min-width: 991.91px) {
+      .heyapps .app-area {
+        width: calc(100% - 10rem);
+        margin: auto; } }
+    .heyapps .app-area .link-one {
+      position: relative;
+      display: inline-block; }
+      .heyapps .app-area .link-one a {
+        color: #0088cc; }
+        .heyapps .app-area .link-one a:hover {
+          color: #fff; }
+          .heyapps .app-area .link-one a:hover + i {
+            color: #fff !important; }
+      .heyapps .app-area .link-one i {
+        position: absolute;
+        right: 2.5rem;
+        transition: 0.5s ease-in-out;
+        color: #0088cc;
+        top: 50%;
+        transform: translateY(-50%); }
+    .heyapps .app-area .contentPara {
+      color: #fff;
+      margin: 3rem 0; }
+    .heyapps .app-area .app-ss img {
+      width: 50rem;
+      margin: 0 auto 3rem; }
 
 @media (min-width: 991.91px) {
   .schools-cats .container {
