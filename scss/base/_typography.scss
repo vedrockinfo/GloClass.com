@@ -44,8 +44,12 @@ span {
 .headingTwo {
   font-size: 3.6rem;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: $colorheading;
+  span{
+    font: inherit;
+    color: $colorTertiary;
+  }
 
   @include DeviceMaximum768 {
     font-size: 2.5rem;

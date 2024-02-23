@@ -60,3 +60,25 @@ $('.partners').owlCarousel({
         }
     }
 })
+
+// Replace with your YouTube video ID
+var videoID = "AdtQFb4GkYc?si=Td9P75GgAr-CG08P";
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video-container', {
+        videoId: videoID,
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    var playButton = document.getElementById('play-button');
+    playButton.addEventListener('click', function () {
+        event.target.playVideo();
+        playButton.style.display = 'none'; // Hide the play button once video starts playing
+    });
+}
