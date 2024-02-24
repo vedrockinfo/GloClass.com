@@ -481,6 +481,32 @@ header .navbar.fixed-top {
     header .navbar.fixed-top .navbar-nav .nav-item ul.dropdown-menu li a:hover {
       background: #201469; }
 
+header .navbar .instituteToggle .barOne {
+  height: 4px;
+  border-radius: 4px;
+  background: #27187E;
+  display: block;
+  text-align: right;
+  margin-left: auto; }
+  header .navbar .instituteToggle .barOne:nth-child(1) {
+    width: 3rem; }
+  header .navbar .instituteToggle .barOne:nth-child(2) {
+    width: 2.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+  header .navbar .instituteToggle .barOne:nth-child(3) {
+    width: 1.4rem; }
+
+header .navbar .instituteCollapse {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40rem;
+  height: 100vh;
+  transform: translateX(45rem);
+  z-index: 9;
+  background: #fff; }
+
 .heroSection {
   position: relative; }
   @media (min-width: 991.91px) {
@@ -547,15 +573,6 @@ header .navbar.fixed-top {
     position: relative;
     transition: 0.5s ease-in-out;
     background: rgba(255, 255, 255, 0.5); }
-    .global-education .card::before {
-      content: "";
-      background: #0088CC;
-      height: 3px;
-      width: 0;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: 0.5s ease-in-out; }
     .global-education .card:hover {
       background: #0088cc;
       border-color: #0088cc !important;
@@ -563,7 +580,8 @@ header .navbar.fixed-top {
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
       .global-education .card:hover img {
         filter: brightness(3) sepia(9) grayscale(1); }
-      .global-education .card:hover .card-content, .global-education .card:hover .headingFour {
+      .global-education .card:hover .card-content,
+      .global-education .card:hover .headingFour {
         color: #fff; }
       .global-education .card:hover .link-two a {
         background: #fff;
@@ -657,7 +675,8 @@ header .navbar.fixed-top {
       font-size: 2rem;
       color: #fff;
       font-weight: 600; }
-    .global-classroom .responsive-content p, .global-classroom .responsive-content a {
+    .global-classroom .responsive-content p,
+    .global-classroom .responsive-content a {
       color: #fff; }
 
 .lead-place {
@@ -683,7 +702,8 @@ header .navbar.fixed-top {
   .team-up figure .sunita-pic {
     width: 100%;
     height: auto; }
-  .team-up figure strong, .team-up figure span {
+  .team-up figure strong,
+  .team-up figure span {
     display: block;
     text-align: center;
     font-size: 14px; }
@@ -698,6 +718,9 @@ header .navbar.fixed-top {
   background: #f6f6f6; }
   .isaptive .headingFour {
     margin-bottom: 1.5rem; }
+    @media (max-width: 767.9px) {
+      .isaptive .headingFour {
+        margin-top: 2rem; } }
     @media (min-width: 991.91px) {
       .isaptive .headingFour {
         text-align: left !important; } }
@@ -707,7 +730,8 @@ header .navbar.fixed-top {
       margin-left: auto;
       margin-right: auto; } }
 
-.experiece-team .img-wrapper, .experiece-team .img-wrapper img {
+.experiece-team .img-wrapper,
+.experiece-team .img-wrapper img {
   height: 100%; }
 
 .experiece-team .img-wrapper img {
@@ -719,6 +743,10 @@ header .navbar.fixed-top {
   padding: 30px 10px 30px 30px;
   margin-top: 3rem;
   margin-bottom: 0; }
+  @media (max-width: 767.9px) {
+    .experiece-team blockquote {
+      margin-bottom: 2rem;
+      margin-top: 2rem; } }
   .experiece-team blockquote ul li {
     color: #fff; }
     .experiece-team blockquote ul li::before {
@@ -745,6 +773,13 @@ header .navbar.fixed-top {
 .not-easy-section h4 {
   text-align: left;
   margin-bottom: 1.5rem; }
+  @media (max-width: 767.9px) {
+    .not-easy-section h4 {
+      margin-top: 2rem; } }
+
+@media (max-width: 767.9px) {
+  .curriculum-provides .img-wrapper {
+    margin-top: 2rem; } }
 
 .curriculum-provides .img-wrapper img {
   object-fit: cover;
@@ -772,6 +807,10 @@ header .navbar.fixed-top {
   height: 50rem;
   width: 100%; }
 
+@media (max-width: 767.9px) {
+  .standardization .row {
+    flex-direction: column-reverse; } }
+
 .standardization blockquote {
   background: #0088cc;
   padding: 30px 10px 30px 30px;
@@ -786,33 +825,39 @@ header .navbar.fixed-top {
   .standardization blockquote h4 {
     text-align: left; }
 
-.support-schools .successgrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: auto; }
-  @media (min-width: 991.91px) {
-    .support-schools .successgrid {
-      width: 90rem; } }
-  @media (max-width: 991.9px) {
-    .support-schools .successgrid {
-      grid-template-columns: repeat(2, 1fr); } }
+.support-schools {
+  background: #f6f6f6;
+  padding: 7rem 0; }
   @media (max-width: 767.9px) {
-    .support-schools .successgrid {
-      grid-template-columns: repeat(1, 1fr); } }
-  .support-schools .successgrid .successgridItem {
-    padding: 3rem 2rem; }
-  .support-schools .successgrid .branding-card {
-    text-align: center; }
-    .support-schools .successgrid .branding-card img {
-      width: 8rem;
-      background: #0088cc;
-      border-radius: 50%; }
-    .support-schools .successgrid .branding-card h4 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #0088cc;
-      margin-top: 2rem;
-      text-transform: capitalize; }
+    .support-schools {
+      padding: 4rem 0; } }
+  .support-schools .successgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto; }
+    @media (min-width: 991.91px) {
+      .support-schools .successgrid {
+        width: 90rem; } }
+    @media (max-width: 991.9px) {
+      .support-schools .successgrid {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 767.9px) {
+      .support-schools .successgrid {
+        grid-template-columns: repeat(1, 1fr); } }
+    .support-schools .successgrid .successgridItem {
+      padding: 3rem 2rem; }
+    .support-schools .successgrid .branding-card {
+      text-align: center; }
+      .support-schools .successgrid .branding-card img {
+        width: 8rem;
+        background: #0088cc;
+        border-radius: 50%; }
+      .support-schools .successgrid .branding-card h4 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #0088cc;
+        margin-top: 2rem;
+        text-transform: capitalize; }
 
 .global-classroom-two .advisors-grid {
   display: grid;
@@ -857,17 +902,37 @@ header .navbar.fixed-top {
       line-height: 1; }
 
 .heyapps {
-  background: #0088cc;
-  padding: 7rem 0; }
+  background: url(../img/app-bg-01.jpg);
+  padding: 7rem 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .heyapps::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 136, 204, 0.9);
+    z-index: 1; }
+  .heyapps .container {
+    position: relative; }
+    @media (max-width: 767.9px) {
+      .heyapps .container h4 {
+        margin-bottom: 2rem; } }
   @media (max-width: 767.9px) {
     .heyapps {
       padding: 4rem 0; } }
   .heyapps .app-area {
-    text-align: center; }
-    @media (min-width: 991.91px) {
+    display: flex;
+    align-items: center;
+    gap: 3rem; }
+    @media (max-width: 767.9px) {
       .heyapps .app-area {
-        width: calc(100% - 10rem);
-        margin: auto; } }
+        flex-direction: column;
+        gap: 0; } }
     .heyapps .app-area .link-one {
       position: relative;
       display: inline-block; }
@@ -887,9 +952,61 @@ header .navbar.fixed-top {
     .heyapps .app-area .contentPara {
       color: #fff;
       margin: 3rem 0; }
+    @media (min-width: 767.91px) {
+      .heyapps .app-area .app-ss {
+        flex: 0 0 30%;
+        max-width: 30%; } }
     .heyapps .app-area .app-ss img {
-      width: 50rem;
-      margin: 0 auto 3rem; }
+      width: 100%; }
+      @media (min-width: 767.91px) {
+        .heyapps .app-area .app-ss img {
+          margin: 0 auto 3rem; } }
+    @media (min-width: 767.91px) {
+      .heyapps .app-area .app-content {
+        flex: 0 0 calc(70% - 3rem);
+        max-width: calc(70% - 3rem); } }
+  .heyapps .owl-dots .owl-dot {
+    background: #fff !important; }
+
+.training-support .img-wrapper {
+  position: relative;
+  overflow: hidden; }
+  .training-support .img-wrapper:hover::before {
+    opacity: 0.4;
+    visibility: visible; }
+  .training-support .img-wrapper:hover .headingFour {
+    opacity: 1;
+    visibility: visible;
+    bottom: 1rem; }
+  .training-support .img-wrapper:hover img {
+    transform: scale(1.2); }
+  .training-support .img-wrapper::before {
+    content: "";
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    z-index: 1; }
+  .training-support .img-wrapper img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s ease-in-out; }
+  .training-support .img-wrapper h4.headingFour {
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    z-index: 2; }
 
 @media (min-width: 991.91px) {
   .schools-cats .container {

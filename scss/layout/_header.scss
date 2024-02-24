@@ -61,11 +61,12 @@ header {
     }
 
     .navbar {
-        i.fa-solid.fa-bars{
-            @include DeviceMaximum992{
+        i.fa-solid.fa-bars {
+            @include DeviceMaximum992 {
                 color: $colorWhite;
             }
         }
+
         .navbar-toggler {
             &:focus {
                 border: none !important;
@@ -85,9 +86,10 @@ header {
 
         .navbar-nav {
             .nav-item {
-                &:not(:last-child){
+                &:not(:last-child) {
                     padding-right: 1rem;
                 }
+
                 a {
                     color: $colorSecondary;
                     transition: $transition04s;
@@ -96,12 +98,14 @@ header {
                         color: $colorTertiary;
                     }
                 }
-                ul.dropdown-menu{
+
+                ul.dropdown-menu {
                     border: none;
                     border-radius: 0;
                     box-shadow: $boxShadowOne;
-                    a{
-                        &:focus{
+
+                    a {
+                        &:focus {
                             background: $colorSecondary;
                             color: $colorWhite;
                         }
@@ -115,32 +119,72 @@ header {
             transform: translateY(40px);
             transition: transform .3s;
             background: $colorSecondary;
-            img{
+
+            img {
                 filter: brightness(90) sepia(10);
             }
-            .navbar-nav {
-            .nav-item {
-                a {
-                    color: $colorWhite;
-                    transition: $transition04s;
 
-                    &:hover {
-                        color: $colorTertiary;
+            .navbar-nav {
+                .nav-item {
+                    a {
+                        color: $colorWhite;
+                        transition: $transition04s;
+
+                        &:hover {
+                            color: $colorTertiary;
+                        }
                     }
-                }
-                ul.dropdown-menu{
-                    background: $colorSecondary;
-                    border-top: 4px solid $colorWhite;
-                    li{
-                        a{
-                            &:hover{
-                                background: darken($colorSecondary, $amount: 5);
+
+                    ul.dropdown-menu {
+                        background: $colorSecondary;
+                        border-top: 4px solid $colorWhite;
+
+                        li {
+                            a {
+                                &:hover {
+                                    background: darken($colorSecondary, $amount: 5);
+                                }
                             }
                         }
                     }
                 }
             }
         }
+
+        .instituteToggle {
+            .barOne {
+                height: 4px;
+                border-radius: 4px;
+                background: $colorSecondary;
+                display: block;
+                text-align: right;
+                margin-left: auto;
+
+                &:nth-child(1) {
+                    width: 3rem;
+                }
+
+                &:nth-child(2) {
+                    width: 2.2rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                &:nth-child(3) {
+                    width: 1.4rem;
+
+                }
+            }
+        }
+        .instituteCollapse{
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 40rem;
+            height: 100vh;
+            transform: translateX(45rem);
+            z-index: 9;
+            background: $colorWhite;
         }
     }
 }

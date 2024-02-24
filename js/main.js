@@ -64,8 +64,8 @@ $('.partners').owlCarousel({
 $('.heyexams').owlCarousel({
     loop: true,
     margin: 0,
-    nav: true,
-    dots: false,
+    nav: false,
+    dots: true,
     autoplay: true,
     autoplayTimeout: 6000,
     smartSpeed: 800,
