@@ -54,7 +54,13 @@
         </div>
 
         <nav id="navbar_top" class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <mokas-09>
+                        <div class="log"></div>
+                        <plo></plo>
+                    </mokas-09>
+                </div>
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="" class="img-fluid">
                 </a>
@@ -83,45 +89,78 @@
                                 <li><a class="dropdown-item" href="geti.html">Teachers Training</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Institutions in the
-                                Making</a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="start-a-school.html">Start a School</a></li>
-                                <li><a class="dropdown-item" href="start-a-target-plus-success-academy.html">Start a
-                                        Target Plus Success Academy</a></li>
-                                <li><a class="dropdown-item" href="start-to-succeed-again.html">Start to Succeed
-                                        Again</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Students and
-                                Parents</a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="cwy.html">Assessment Tool for I to VIII</a></li>
-                                <li><a class="dropdown-item" href="target-plus.html">Assessment Tool for Boards</a></li>
-                                <li><a class="dropdown-item" href="10-cool-keys.html">10 Cool Keys</a></li>
-                                <li><a class="dropdown-item" href="#">Shop</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Education we
-                                Want</a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a class="dropdown-item" href="ed-leadership.html">EDL/Research</a></li>
-                                <li><a class="dropdown-item" href="global-dream.html">Global Dream</a></li>
-                                <li><a class="dropdown-item" href="synergy-workshops.html">Synergy Workshops</a></li>
-                                <li><a class="dropdown-item" href="class-room-demo.html">Class Demos</a></li>
-                                <li><a class="dropdown-item" href="parents-workshop.html">Parent Workshop</a></li>
-                                <li><a class="dropdown-item" href="the-big-picture.html">Big Picture</a></li>
-                                <li><a class="dropdown-item" href="council-of-global-education.html">Global Education
-                                        Research Conference</a></li>
-                            </ul>
-                        </li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item school-checked">
+                            <input type="checkbox" name="" id="header-checked">
+                            <label for="header-checked">
+                                <span class="barOne"></span>
+                                <span class="barOne"></span>
+                                <span class="barOne"></span>
+                            </label>
+                            <ul class="instituteCollapse">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Institutions
+                                        in the
+                                        Making</a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a class="dropdown-item" href="start-a-school.html">Start a School</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="start-a-target-plus-success-academy.html">Start a
+                                                Target Plus Success Academy</a></li>
+                                        <li><a class="dropdown-item" href="start-to-succeed-again.html">Start to
+                                                Succeed
+                                                Again</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Students
+                                        and
+                                        Parents</a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a class="dropdown-item" href="cwy.html">Assessment Tool for I to
+                                                VIII</a></li>
+                                        <li><a class="dropdown-item" href="target-plus.html">Assessment Tool for
+                                                Boards</a></li>
+                                        <li><a class="dropdown-item" href="10-cool-keys.html">10 Cool Keys</a></li>
+                                        <li><a class="dropdown-item" href="#">Shop</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Education we
+                                        Want</a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a class="dropdown-item" href="ed-leadership.html">EDL/Research</a></li>
+                                        <li><a class="dropdown-item" href="global-dream.html">Global Dream</a></li>
+                                        <li><a class="dropdown-item" href="synergy-workshops.html">Synergy
+                                                Workshops</a></li>
+                                        <li><a class="dropdown-item" href="class-room-demo.html">Class Demos</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="parents-workshop.html">Parent
+                                                Workshop</a></li>
+                                        <li><a class="dropdown-item" href="the-big-picture.html">Big Picture</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="council-of-global-education.html">Global
+                                                Education
+                                                Research Conference</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item"><a href="#" class="nav-link instituteToggle" id="submenuToggle">
+                                <span class="barOne"></span><span class="barOne"></span><span class="barOne"></span>
+                            </a>
+                            <div class="close" id="closed">X</div>
+                        </li> -->
                     </ul>
-
+                    <!-- <div class="instituteCollapse">
+                        <ul>
+                            <li>Vedant</li>
+                            <li>Vedant</li>
+                            <li>Vedant</li>
+                        </ul>
+                    </div> -->
                 </div>
             </div>
         </nav>
@@ -466,7 +505,7 @@
                                     </p>
                                 </div>
                                 <div class="link-one">
-                                    <a href="https://getilearn.app/" target="_blank">www.getilearn.app/</a>
+                                    <a href="https://getilearn.app/" target="_blank">www.getilearn.app</a>
                                     <i class="fa-solid fa-download"></i>
                                 </div>
                             </div>
@@ -856,6 +895,19 @@
             </div>
         </div>
     </footer>
+
+    <ul>
+        <li><a href="">unscreen.com</a></li>
+        <li><a href="">bigspeak.ai</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
 
     <script src="vendor/js/jquery.js"></script>
     <script src="vendor/js/bootstrap.bundle.min.js"></script>

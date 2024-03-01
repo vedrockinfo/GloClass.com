@@ -103,3 +103,10 @@ function onPlayerReady(event) {
         playButton.style.display = 'none'; // Hide the play button once video starts playing
     });
 }
+
+jQuery("#submenuToggle").click(function () {
+    jQuery(".instituteCollapse").addClass("openned");
+    jQuery("#closed").click(function () {
+        jQuery(".instituteCollapse").removeClass(".openned")
+    })
+});

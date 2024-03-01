@@ -481,21 +481,29 @@ header .navbar.fixed-top {
     header .navbar.fixed-top .navbar-nav .nav-item ul.dropdown-menu li a:hover {
       background: #201469; }
 
-header .navbar .instituteToggle .barOne {
-  height: 4px;
-  border-radius: 4px;
-  background: #27187E;
-  display: block;
-  text-align: right;
-  margin-left: auto; }
-  header .navbar .instituteToggle .barOne:nth-child(1) {
-    width: 3rem; }
-  header .navbar .instituteToggle .barOne:nth-child(2) {
-    width: 2.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem; }
-  header .navbar .instituteToggle .barOne:nth-child(3) {
-    width: 1.4rem; }
+header .navbar .school-checked {
+  position: relative; }
+  header .navbar .school-checked #header-checked {
+    display: none; }
+    header .navbar .school-checked #header-checked:checked + .instituteCollapse {
+      transform: translateX(0); }
+  header .navbar .school-checked label[for="header-checked"] {
+    cursor: pointer; }
+    header .navbar .school-checked label[for="header-checked"] .barOne {
+      height: 4px;
+      border-radius: 4px;
+      background: #27187E;
+      display: block;
+      text-align: right;
+      margin-left: auto; }
+      header .navbar .school-checked label[for="header-checked"] .barOne:nth-child(1) {
+        width: 3rem; }
+      header .navbar .school-checked label[for="header-checked"] .barOne:nth-child(2) {
+        width: 2.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem; }
+      header .navbar .school-checked label[for="header-checked"] .barOne:nth-child(3) {
+        width: 1.4rem; }
 
 header .navbar .instituteCollapse {
   position: fixed;
@@ -506,6 +514,8 @@ header .navbar .instituteCollapse {
   transform: translateX(45rem);
   z-index: 9;
   background: #fff; }
+  header .navbar .instituteCollapse.openned {
+    transform: translateX(0); }
 
 .heroSection {
   position: relative; }
@@ -1091,8 +1101,6 @@ header .navbar .instituteCollapse {
     z-index: 2; }
   .survey .survey-link {
     background: #ff9e33;
-    height: 10rem;
-    display: grid;
     place-content: center;
     position: relative;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
@@ -1118,10 +1126,68 @@ header .navbar .instituteCollapse {
       text-decoration: none;
       text-align: center;
       padding: 1rem;
-      display: block;
+      height: 10rem;
+      display: grid;
+      place-content: center;
       font-size: 2rem;
       font-weight: 500;
       line-height: 1.2; }
+
+.franchise-faqs {
+  background: #0088CC;
+  padding: 7rem 0;
+  position: relative; }
+  .franchise-faqs::before {
+    content: "";
+    background-image: url("../img/faqs-bg.png");
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    mix-blend-mode: overlay;
+    opacity: 0.2; }
+  .franchise-faqs .container {
+    position: relative; }
+  @media (max-width: 767.9px) {
+    .franchise-faqs {
+      padding: 4rem 0; } }
+  .franchise-faqs .faqs-area .accordion-item:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .franchise-faqs .faqs-area .accordion-button {
+    background: #007ebd;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    box-shadow: 0px 1px 6px #00000023;
+    border-bottom: 1px solid #006da3;
+    padding: 20px; }
+    .franchise-faqs .faqs-area .accordion-button::after {
+      filter: brightness(10); }
+    .franchise-faqs .faqs-area .accordion-button:hover {
+      box-shadow: none; }
+    .franchise-faqs .faqs-area .accordion-button:focus {
+      background: #006da3;
+      box-shadow: none;
+      border-bottom: 1px solid #006da3;
+      color: #fff; }
+  .franchise-faqs .faqs-area .collapsing {
+    transition: height 0.5s ease-out; }
+  .franchise-faqs .accordion-body .contentPara {
+    color: #fff;
+    font-weight: 300; }
+    .franchise-faqs .accordion-body .contentPara strong {
+      font-weight: 700; }
+    .franchise-faqs .accordion-body .contentPara li:before {
+      background: #fff;
+      outline-color: #fff;
+      border-color: #0088CC; }
+    .franchise-faqs .accordion-body .contentPara ol li:not(:last-child) {
+      margin-bottom: 7.4px; }
 
 .study-materials__kit {
   background: #fff;

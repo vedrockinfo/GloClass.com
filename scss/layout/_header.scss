@@ -150,8 +150,18 @@ header {
                 }
             }
         }
-
-        .instituteToggle {
+        .school-checked{
+            position: relative;
+            #header-checked{
+            display: none;
+            &:checked{
+                & + .instituteCollapse{
+                    transform: translateX(0);
+                }
+            }
+        }
+        label[for="header-checked"] {
+            cursor: pointer;
             .barOne {
                 height: 4px;
                 border-radius: 4px;
@@ -176,6 +186,7 @@ header {
                 }
             }
         }
+        }
         .instituteCollapse{
             position: fixed;
             right: 0;
@@ -185,6 +196,9 @@ header {
             transform: translateX(45rem);
             z-index: 9;
             background: $colorWhite;
+            &.openned{
+                transform: translateX(0);
+            }
         }
     }
 }

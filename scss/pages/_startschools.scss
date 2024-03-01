@@ -108,8 +108,6 @@
         }
     .survey-link{
         background: lighten($colorTertiary, $amount:10);
-        height: 10rem;
-        display: grid;
         place-content: center;
         position: relative;
         box-shadow: $boxShadowOne;
@@ -139,10 +137,91 @@
             text-decoration: none;
             text-align: center;
             padding: 1rem;
-            display: block;
+            height: 10rem;
+            display: grid;
+            place-content: center;
             font-size: 2rem;
             font-weight: 500;
             line-height: 1.2;
+        }
+    }
+}
+.franchise-faqs{
+    background: $colorPrimary;
+    padding: 7rem 0;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url("../img/faqs-bg.png");
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-size: contain;
+        background-position: right;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        mix-blend-mode: overlay;
+    opacity: 0.2;
+    }
+    .container{
+        position: relative;
+    }
+    @include DeviceMaximum768{
+        padding: 4rem 0;
+    }
+    .faqs-area{
+        .accordion-item{
+            &:not(:last-child){
+                margin-bottom: 1.5rem;
+            }
+        }
+        .accordion-button{
+            background: darken($colorPrimary, $amount: 3);
+            color: $colorWhite;
+            font-size: 1.6rem;
+            font-weight: 500;
+            box-shadow: 0px 1px 6px #00000023;
+            &::after{
+                filter: brightness(10);
+            }
+            &:hover{
+                box-shadow: none;
+            }
+            &:focus{
+                background: darken($colorPrimary, $amount: 8);
+                box-shadow: none;
+                border-bottom:1px solid #006da3;
+                color: $colorWhite;
+            }
+            border-bottom: 1px solid #006da3;
+            padding: 20px;
+
+        }
+        .collapsing {
+    transition: height 0.5s ease-out;
+  }
+    }
+    .accordion-body{
+        .contentPara{
+            color: $colorWhite;
+            font-weight: 300;
+            strong{
+                font-weight: 700;
+            }
+            li:before{
+                background: $colorWhite;
+    outline-color: $colorWhite;
+    border-color: $colorPrimary;
+            }
+            ol{
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 7.4px;
+                    }
+                }
+            }
         }
     }
 }
