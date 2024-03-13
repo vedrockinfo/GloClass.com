@@ -20,6 +20,7 @@ span {
   font-weight: bold;
   color: $colorWhite;
   text-align: left;
+  text-transform: capitalize;
 
   @include DeviceMaximum768 {
     font-size: 2.2rem;
@@ -93,6 +94,17 @@ span {
   font-weight: 300;
   color: $colorheading;
   text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+  color: $colorheading;
+  span{
+    color: $colorPrimary;
+    font: inherit;
+  }
 }
 
 blockquote.blockquote {

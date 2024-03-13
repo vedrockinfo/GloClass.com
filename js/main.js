@@ -110,3 +110,34 @@ jQuery("#submenuToggle").click(function () {
         jQuery(".instituteCollapse").removeClass(".openned")
     })
 });
+
+$(function () {
+    $("#item").click(function () {
+        $(".instituteCollapse").toggleClass("slided");
+        $("#item-closed").click(function () {
+            $(".instituteCollapse").removeClass("slided");
+        });
+    });
+});
+
+jQuery(document).ready(function () {
+    jQuery('.contact-page .form-control').on('focus', function () {
+        jQuery(this).parent().addClass('focused');
+    }).on('blur', function () {
+        jQuery(this).parent().removeClass('focused');
+    }).on('input', function () {
+        jQuery(this).parent().addClass('inputted');
+    });
+
+});
+
+jQuery(document).ready(function () {
+    jQuery('.aSurveyform .form-control').on('focus', function () {
+        jQuery(this).parent().addClass('focused');
+    }).on('blur', function () {
+        jQuery(this).parent().removeClass('focused');
+    }).on('input', function () {
+        jQuery(this).parent().addClass('inputted');
+    });
+
+});

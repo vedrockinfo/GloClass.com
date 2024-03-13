@@ -280,6 +280,11 @@
 }
 
 .team-up {
+    .link-two{
+        @media screen and (min-width:992px) {
+            text-align: left;
+        }
+    }
     figure {
         width: 20rem;
 
@@ -488,12 +493,6 @@
 }
 
 .support-schools {
-    background: #f6f6f6;
-    padding: 7rem 0;
-
-    @include DeviceMaximum768 {
-        padding: 4rem 0;
-    }
 
     .successgrid {
         display: grid;
@@ -538,6 +537,11 @@
 }
 
 .global-classroom-two {
+    background: #f7f7f7;
+    padding: 7rem 0;
+    @media screen and (max-width:992px) {
+        padding: 4rem 0;
+    }
     .advisors-grid {
         display: grid;
         grid-template-columns: repeat(5, 1fr);

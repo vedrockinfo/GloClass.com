@@ -1,9 +1,4 @@
 .schools-cats {
-    .container{
-        @include DeviceMinimum992{
-            width: 95rem;
-        }
-    }
     .card {
         display: block;
         border: 0px;
