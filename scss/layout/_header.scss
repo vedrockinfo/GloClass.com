@@ -1,6 +1,6 @@
 header {
     .topHeader {
-        background: $colorbgLight;
+        background: #27187E;
         padding: 1rem 0;
 
         .header-social-icons {
@@ -13,13 +13,22 @@ header {
             margin: 0;
 
             li {
-                background: var(--fclr);
+                background: $colorWhite;
                 border-radius: 50%;
+                border: 1px solid $colorWhite;
+                transition: all 0.5s;
+                &:hover{
+                    background: transparent;
+                    a{
+                        color: $colorWhite;
+                    }
+                }
 
                 a {
-                    color: #fff;
+                    color: #27187E;
                     width: 3rem;
                     height: 3rem;
+                    transition: all 0.5s;
                     display: grid;
                     place-content: center;
                     font-size: 0.9rem;

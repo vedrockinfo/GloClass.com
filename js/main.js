@@ -45,7 +45,29 @@ $('.partners').owlCarousel({
     margin: 0,
     nav: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
+    autoplayTimeout: 6000,
+    smartSpeed: 800,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+})
+
+
+$('.advisors-grid').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: false,
+    autoplay: false,
     autoplayTimeout: 6000,
     smartSpeed: 800,
     responsive: {
@@ -78,6 +100,28 @@ $('.heyexams').owlCarousel({
         },
         1000: {
             items: 1
+        }
+    }
+})
+
+$('.gloTeam').owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    navText: ['<i class="fa-solid fa-arrow-left"></i>', '<i class="fa-solid fa-arrow-right"></i>'],
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    smartSpeed: 800,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
         }
     }
 })

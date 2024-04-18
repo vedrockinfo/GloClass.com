@@ -1,0 +1,31 @@
+.gloTeam{
+    .team-bio{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 1rem 0;
+        img{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        &__content{
+            padding: 2rem 0 0;
+            text-align: center;
+            .headingFour{
+                font-size: 16px;
+            }
+            .period{
+                font-size: 14px;
+                padding-bottom: 2rem;
+                display: block;
+            }
+            .headingFive{
+                font-size: 14px;
+                font-weight: 600;
+                color: $colorWhite;
+                background: $colorPrimary;
+                padding: 9px 2px;
+            }
+        }
+    }
+}
