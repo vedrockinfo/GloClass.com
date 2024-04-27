@@ -1,0 +1,10 @@
+.skyhigh-area{
+    .link-two{
+        @media screen and (min-width:992px) {
+            text-align: left;
+        }
+    }
+    .img-wrapper{
+        animation: bouncing .63s ease-in-out infinite alternate;
+    }
+}
